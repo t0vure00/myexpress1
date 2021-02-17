@@ -22,7 +22,7 @@ const course = {//course on luokka tässä johon kuul get,getById.. apit "jäsen
   },
   update: function(id, course, callback) {
     return db.query(
-      'update course set cname=?,credits=?, where id_course=?',
+      'update course set cname=?,credits=? where id_course=?',
       [course.cname, course.credits, id],
       callback
     );
