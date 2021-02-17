@@ -22,7 +22,7 @@ const book = {//book on luokka tässä johon kuul get,getById.. apit "jäsenfunk
   },
   update: function(id, book, callback) {
     return db.query(
-      'update book set name=?,author=?, isbn=? where id_book=?',
+      'update book set name=?,author=?, isbn=?, where id_book=?',
       [book.name, book.author, book.isbn, id],
       callback
     );
